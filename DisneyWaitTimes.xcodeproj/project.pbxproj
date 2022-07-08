@@ -17,6 +17,10 @@
 		65891FBB2878180B0034C159 /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65891FBA2878180B0034C159 /* notes.txt */; };
 		65891FBE287819C70034C159 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65891FBD287819C70034C159 /* Park.swift */; };
 		65891FC0287819FA0034C159 /* ParkQueueTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65891FBF287819FA0034C159 /* ParkQueueTimes.swift */; };
+		65891FC328781B8B0034C159 /* ParksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65891FC228781B8B0034C159 /* ParksListView.swift */; };
+		65891FC528781CA50034C159 /* ParkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65891FC428781CA50034C159 /* ParkView.swift */; };
+		65891FC728781DE20034C159 /* WaitTimesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65891FC628781DE20034C159 /* WaitTimesFetcher.swift */; };
+		65891FC9287823670034C159 /* LandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65891FC8287823670034C159 /* LandView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		65891FBA2878180B0034C159 /* notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
 		65891FBD287819C70034C159 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 		65891FBF287819FA0034C159 /* ParkQueueTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkQueueTimes.swift; sourceTree = "<group>"; };
+		65891FC228781B8B0034C159 /* ParksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksListView.swift; sourceTree = "<group>"; };
+		65891FC428781CA50034C159 /* ParkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkView.swift; sourceTree = "<group>"; };
+		65891FC628781DE20034C159 /* WaitTimesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitTimesFetcher.swift; sourceTree = "<group>"; };
+		65891FC8287823670034C159 /* LandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,13 @@
 		65891F8F287817530034C159 /* DisneyWaitTimes */ = {
 			isa = PBXGroup;
 			children = (
+				65891FC128781B800034C159 /* Views */,
 				65891FBC287819590034C159 /* Models */,
 				65891F90287817530034C159 /* DisneyWaitTimesApp.swift */,
 				65891F92287817530034C159 /* ContentView.swift */,
 				65891F94287817540034C159 /* Assets.xcassets */,
 				65891F96287817540034C159 /* Preview Content */,
+				65891FC628781DE20034C159 /* WaitTimesFetcher.swift */,
 			);
 			path = DisneyWaitTimes;
 			sourceTree = "<group>";
@@ -142,6 +152,16 @@
 				65891FBF287819FA0034C159 /* ParkQueueTimes.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		65891FC128781B800034C159 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65891FC228781B8B0034C159 /* ParksListView.swift */,
+				65891FC428781CA50034C159 /* ParkView.swift */,
+				65891FC8287823670034C159 /* LandView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				65891F93287817530034C159 /* ContentView.swift in Sources */,
+				65891FC728781DE20034C159 /* WaitTimesFetcher.swift in Sources */,
+				65891FC328781B8B0034C159 /* ParksListView.swift in Sources */,
+				65891FC9287823670034C159 /* LandView.swift in Sources */,
 				65891FBE287819C70034C159 /* Park.swift in Sources */,
 				65891FC0287819FA0034C159 /* ParkQueueTimes.swift in Sources */,
+				65891FC528781CA50034C159 /* ParkView.swift in Sources */,
 				65891F91287817530034C159 /* DisneyWaitTimesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
