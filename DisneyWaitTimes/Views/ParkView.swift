@@ -32,7 +32,7 @@ struct ParkView: View {
                     }
                 } else {
                     List(waitTimes.lands, id: \.id) { land in
-                        NavigationLink(land.name, destination: LandView(land))
+                        ListRowWithImageView(name: land.name, imageID: land.id, destination: LandView(land))
                     }
                 }
             } else {
@@ -55,6 +55,7 @@ struct ParkView: View {
             }
         }
         .navigationTitle(park.name)
+        .navigationBarTitleDisplayMode(.inline)
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
     }
 }

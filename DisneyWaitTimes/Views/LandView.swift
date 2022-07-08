@@ -12,7 +12,9 @@ struct LandView: View {
     var body: some View {
         List(land.rides, id: \.id) { ride in
             RideTimeView(ride)
-        }.navigationTitle(land.name)
+        }
+        .navigationTitle(land.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
