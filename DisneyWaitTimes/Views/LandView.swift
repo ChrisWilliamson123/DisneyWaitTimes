@@ -11,15 +11,7 @@ struct LandView: View {
 
     var body: some View {
         List(land.rides, id: \.id) { ride in
-            HStack {
-                Text(ride.name)
-                Spacer()
-                if ride.is_open {
-                    Text("\(ride.wait_time)")
-                } else {
-                    Text("Closed").foregroundColor(.red)
-                }
-            }
+            RideTimeView(ride)
         }.navigationTitle(land.name)
     }
 }
